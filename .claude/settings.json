@@ -1,0 +1,15 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd \"$CLAUDE_PROJECT_DIR\" && [ -x .venv/Scripts/ruff.exe ] || exit 0; .venv/Scripts/ruff.exe check --fix --quiet . && .venv/Scripts/ruff.exe format --quiet ."
+          }
+        ]
+      }
+    ]
+  }
+}
