@@ -3,3 +3,4 @@ pip-tools
 ruff
 mypy
 pytest
+pip-audit
