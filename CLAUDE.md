@@ -24,7 +24,7 @@ Descripción del proyecto: `../ruta-ingeniero/04-PROYECTOS-V2.md` (P1). Plan de 
 
 ## Aprendizaje
 - IMPORTANT: Estoy aprendiendo los temas de la fase actual del plan. Si la tarea toca uno de ellos, deja la pieza central como TODO(human) con una explicación breve en lugar de implementarla.
-- Fase actual: Fase 0 · Entorno profesional (semana 3: CI con GitHub Actions, pre-commit y pip-audit)
+- Fase actual: Fase 1 · Python a fondo y el dominio de P1 (semana 4: modelo de datos de Python, tipado y Pydantic; modelos de la factura)
 - Ayuda en tres niveles: primero una pista, luego una explicación, y solo si lo pido, el código.
 
 ## Al compactar
