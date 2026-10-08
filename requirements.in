@@ -3,3 +3,4 @@
 psycopg[binary]
 redis
 pydantic-settings
+pydantic
