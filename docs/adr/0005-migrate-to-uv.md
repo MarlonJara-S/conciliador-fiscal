@@ -55,4 +55,13 @@ Use **uv** for environments and dependencies:
 
 ## Results
 
-To be filled in with the CI timings of the first runs after the migration.
+First CI run after the migration (pull request, 2026-10-14):
+
+| Step | Before (pip-tools) | After (uv) |
+|---|---|---|
+| Set up Python / uv | 2–4 s | 1 s |
+| Install dependencies | 8–12 s | 1 s |
+| Lint, format, types, tests, audit | 3–4 s | 4 s |
+| Whole run | 20–33 s (median ~25 s) | 17 s |
+
+Dependency installation dropped from about 10 seconds to 1, and the whole run from a median of about 25 seconds to 17 (about 30% less). This is a single run; later runs on `main` will confirm it. The first CI attempt failed because `astral-sh/setup-uv` publishes no floating `v10` tag; the action is now pinned to the commit SHA of `v10.3.0`.
