@@ -28,7 +28,7 @@ Dependencias con uv (ADR 0005): `pyproject.toml` + `uv.lock`. Nunca editar `uv.l
 - Commits pequeños, uno por cambio lógico, con Conventional Commits en inglés e imperativo.
 - `main` está protegido (ruleset "Protect main"): solo entra por PR con el check `quality` en verde. Nunca push directo, nunca `--admin`.
 - Cierre de toda tarea: `git push -u origin <rama>` → `gh pr create` → `gh pr checks --watch` → `gh pr merge --rebase --delete-branch` → `git switch main && git pull && uv sync`.
-- Yo (el usuario) ejecuto los comandos de Git; Claude los propone, uno a la vez, y verifica el resultado leyendo el estado del repositorio.
+- Yo (el usuario) ejecuto los comandos de Git; Claude los propone en un solo bloque por fase (p. ej. "Paso 0", "Cierra el PR"), sin explicar cada comando, y verifica el resultado leyendo el estado del repositorio.
 - Datos personales y secretos nunca en Git: van en `data/private/` o `.env` (ignorados). Revisar lo preparado antes de commits con datos reales.
 
 ## Forma de enseñar
