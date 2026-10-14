@@ -1,0 +1,620 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AttachedDocument xmlns="urn:oasis:names:specification:ubl:schema:xsd:AttachedDocument-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ccts="urn:un:unece:uncefact:data:specification:CoreComponentTypeSchemaModule:2" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#">
+  <ext:UBLExtensions>
+    <ext:UBLExtension>
+      <ext:ExtensionContent>
+        <CustomFieldExtension>
+          <CustomField Name="ID" Value="0" />
+        </CustomFieldExtension>
+      </ext:ExtensionContent>
+    </ext:UBLExtension>
+    <ext:UBLExtension>
+      <ext:ExtensionContent><ds:Signature Id="xmldsig-b68afb57-a5e8-4a68-9dd2-d96d4b293713">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+<ds:Reference Id="xmldsig-b68afb57-a5e8-4a68-9dd2-d96d4b293713-ref0" URI="">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+<ds:DigestValue>eM5PrlkzKaMmlr+v/EljfgxDumL6ce2n3wNEJacocV4=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference Id="xmldsig-b68afb57-a5e8-4a68-9dd2-d96d4b293713-ref1" URI="#KeyInfo">
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+<ds:DigestValue>nlZpaEOOd1DrxeipUQXUOwUYW5Hwtj/jvRxeNIA5CLk=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference Id="xmldsig-b68afb57-a5e8-4a68-9dd2-d96d4b293713-ref2" URI="#SignedPropertiesId" Type="http://uri.etsi.org/01903#SignedProperties">
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+<ds:DigestValue>BWc07yNRNAJQmXwjT1klgqQghEn+AOGv85L95mJvgfI=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>
+C+UGireJI/+oLlo1ZF272dXLmd94/xRJed1F/5a8newxaPhFATfg2tVHcfipaCzjnJL1805bPAVP
+IqA0cCKcCmIdJcdXXDLYKa7jPR0h2VrmZKcACR2vC3LIs1UJr+CSwi25/SPCccK9QYmCpEqhMVp0
+ayzwIbYwtSnKTndhR96PJ3yNZ1L+mH2wI5rU6MPp8bgaRdGWM3e4kRj/TG7CqxtrhnFrejSORUSG
+uY63CYMxepoGPofiAbxZkzyozaXddovyFhPRq3ODpnUPnHCkSez5RLtXBMYHnNtvliCzK+CfZEC0
+JpLRSB7yQj5RhWW1J9PcHikj62FDAtkj9KTOUA==
+</ds:SignatureValue>
+<ds:KeyInfo Id="KeyInfo">
+<ds:X509Data>
+<ds:X509Certificate>
+MIIIGzCCBgOgAwIBAgIIXwVROquAni4wDQYJKoZIhvcNAQELBQAwgbYxIzAhBgkqhkiG9w0BCQEW
+FGluZm9AYW5kZXNzY2QuY29tLmNvMSYwJAYDVQQDEx1DQSBBTkRFUyBTQ0QgUy5BLiBDbGFzZSBJ
+SSB2MzEwMC4GA1UECxMnRGl2aXNpb24gZGUgY2VydGlmaWNhY2lvbiBlbnRpZGFkIGZpbmFsMRIw
+EAYDVQQKEwlBbmRlcyBTQ0QxFDASBgNVBAcTC0JvZ290YSBELkMuMQswCQYDVQQGEwJDTzAeFw0y
+NDEwMTgyMTQyMTlaFw0yNjEwMTgyMTQxMTlaMIIBazFGMEQGA1UECRM9QUsgNDUgMTA4IDI3IEVE
+IENFTlRSTyBFTVBSRVNBUklBTCBQQVJBTEVMTyAxMDggT0YgOTA2IEIgVE8gMjEjMCEGCSqGSIb3
+DQEJARYUY29udGFjdG9AZnltdGVjaC5jb20xIDAeBgNVBAMTF0YgWSBNIFRFQ0hOT0xPR1kgUy5B
+LlMuMRMwEQYDVQQFEwo5MDAzMDY4MjM0MTYwNAYDVQQMEy1FbWlzb3IgRmFjdHVyYSBFbGVjdHJv
+bmljYSAtIFBlcnNvbmEgSnVyaWRpY2ExOzA5BgNVBAsTMkVtaXRpZG8gcG9yIEFuZGVzIFNDRCBB
+YyAyNiA2OSBDIDAzIFRvcnJlIEIgT2YgNzAxMRwwGgYDVQQKExNSZXByZXNlbnRhbnRlIExlZ2Fs
+MQ8wDQYDVQQHEwZCT0dPVEExFDASBgNVBAgTC0JPR09UQSBELkMuMQswCQYDVQQGEwJDTzCCASIw
+DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANvRoTwmfvMOiz+IaFPz7d8Wm2AyMbMOg5vmO8le
+SuoNfijGgjOQvWxJcY26Ql1dtY1Ci1MfLaGGhhnoIcf3j/nkXT0FsfUkwtJ0W+4olYEzmUAE3I4q
+PGLPYDfzSU8VsvuNBqwBjwdKER1Jy8sgtJ/Fk3RoTmdwlIvGBSwRWARIQUJbZstZH611ndOWf7eh
+3mcvRXtJLyKiY7oIk/QGt+rZIN0hAOduOgDR8VYLkZXKQHLk248cB0K9DkevQen8j81jRUAJDY6k
+TEgw/nNn1aZEhcwpx4+CPc4cRPHPdM4p2sdiOnKHvdsHcSeoV641YKhAz45j/3jAGRD/la6+GX8C
+AwEAAaOCAnMwggJvMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUQP4maUcyJzLRrCHILuzPjdU1
+aOgwbwYIKwYBBQUHAQEEYzBhMDYGCCsGAQUFBzAChipodHRwOi8vY2VydHMuYW5kZXNzY2QuY29t
+LmNvL0NsYXNlSUl2My5jcnQwJwYIKwYBBQUHMAGGG2h0dHA6Ly9vY3NwLmFuZGVzc2NkLmNvbS5j
+bzAfBgNVHREEGDAWgRRjb250YWN0b0BmeW10ZWNoLmNvbTCCASEGA1UdIASCARgwggEUMIHABgwr
+BgEEAYH0SAECBgkwga8wgawGCCsGAQUFBwICMIGfDIGcTGEgdXRpbGl6YWNpw7NuIGRlIGVzdGUg
+Y2VydGlmaWNhZG8gZXN0w6Egc3VqZXRhIGEgbGEgUEMgZGUgRmFjdHVyYWNpw7NuIEVsZWN0csOz
+bmljYSB5IERQQyBlc3RhYmxlY2lkYXMgcG9yIEFuZGVzIFNDRC4gQ8OzZGlnbyBkZSBBY3JlZGl0
+YWNpw7NuOiAxNi1FQ0QtMDA0ME8GDCsGAQQBgfRIAQEBCzA/MD0GCCsGAQUFBwIBFjFodHRwczov
+L3d3dy5hbmRlc3NjZC5jb20uY28vZG9jcy9EUENfQW5kZXNTQ0QucGRmMB0GA1UdJQQWMBQGCCsG
+AQUFBwMCBggrBgEFBQcDBDA5BgNVHR8EMjAwMC6gLKAqhihodHRwOi8vY3JsLmFuZGVzc2NkLmNv
+bS5jby9DbGFzZUlJdjMuY3JsMB0GA1UdDgQWBBTN/M9t4fnnvITHIaqr4Bf3lFmSzjAOBgNVHQ8B
+Af8EBAMCBeAwDQYJKoZIhvcNAQELBQADggIBAFT/Ss0CxKkApnPoS0NxrqCZGx911ESGM8dV6bWb
+Wi5s1MLdtUzuTNR1y8CbOOd57hiyPufSWv2G0kq7/YJE6Z5an5l2DnuxK3wad5F/kcVSm+DKVs4R
+SvL+CRCz0al7cwHfu3sNHsqFgh6vmNetLFelwpQHGZsis19d+S5Z2+ApI7UxHilJqEZ9pyt1TwxO
+TJi7CbXQWgl4KOgg0ROLJpQZi4kNwv6rE2+zcGt+uzP0ARn+Z18trd1OfOe+gS2uHsa5MPxv67fr
+s1iKxYiPYNwNnqD5vMjSVW+0oMIvCnyQ5x/XptAvQE5kBbd1H7aIxP12tsS+aqX4FeNS+puCM2Ug
+Qu95/X12JxaRt9wMLPsUi+FO//b2SZdLH6fhAuwlAmXB97iquKrHBn6rf4Z+65Jp+Kk2oLTJtG36
+f8Qh4RzCPhG8/fD1H2ZYRNNb1zvRWBlZuH/Pccf9tP0FmYIHn2IIHTFK7N+NNEhEDkKYqxDyD/bc
+WLeecij9Epv+kdTIiafnO4UKvACfZRfMAvRxF2F0AykX4eBTuC+yvYGPbF5bkTh5kz2xVhp+ua+V
+keThQt9vQy8w+KhNRkfWhsIDwor4ZDHl6kUwFEoC5VAf4pugrJHGeDdD8eQ55r1PRG6fZpIAAkTZ
+0veKUMZuQYM0VGbUExmy0S7U2qke/qyqiSoc
+</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+<ds:Object><xades:QualifyingProperties xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" Target="#xmldsig-b68afb57-a5e8-4a68-9dd2-d96d4b293713"><xades:SignedProperties Id="SignedPropertiesId"><xades:SignedSignatureProperties><xades:SigningTime>2026-07-24T21:31:09.846-05:00</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>hBTf4XO5/Zd6Tb+a9yd0vcHDQ2MqM9uNbjJ/Q91zark=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>C=CO,L=Bogota D.C.,O=Andes SCD,OU=Division de certificacion entidad final,CN=CA ANDES SCD S.A. Clase II v3,1.2.840.113549.1.9.1=#1614696e666f40616e6465737363642e636f6d2e636f</ds:X509IssuerName><ds:X509SerialNumber>6846968120913993262</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate><xades:SignaturePolicyIdentifier><xades:SignaturePolicyId><xades:SigPolicyId><xades:Identifier>https://facturaelectronica.dian.gov.co/politicadefirma/v2/politicadefirmav2.pdf</xades:Identifier></xades:SigPolicyId><xades:SigPolicyHash><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>dMoMvtcG5aIzgYo0tIsSQeVJBDnUnfSOfBpxXrmor0Y=</ds:DigestValue></xades:SigPolicyHash></xades:SignaturePolicyId></xades:SignaturePolicyIdentifier><xades:SignerRole><xades:ClaimedRoles><xades:ClaimedRole>supplier</xades:ClaimedRole></xades:ClaimedRoles></xades:SignerRole></xades:SignedSignatureProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object>
+</ds:Signature></ext:ExtensionContent>
+    </ext:UBLExtension>
+  </ext:UBLExtensions>
+  <cbc:UBLVersionID>UBL 2.1</cbc:UBLVersionID>
+  <cbc:CustomizationID>Documentos adjuntos</cbc:CustomizationID>
+  <cbc:ProfileID>DIAN 2.1</cbc:ProfileID>
+  <cbc:ProfileExecutionID>1</cbc:ProfileExecutionID>
+  <cbc:ID>ENVG495822</cbc:ID>
+  <cbc:IssueDate>2026-07-25</cbc:IssueDate>
+  <cbc:IssueTime>02:31:08-05:00</cbc:IssueTime>
+  <cbc:DocumentType>Contenedor de Factura Electrónica</cbc:DocumentType>
+  <cbc:ParentDocumentID>ENVG495822</cbc:ParentDocumentID>
+  <cac:SenderParty>
+    <cac:PartyTaxScheme>
+      <cbc:RegistrationName>CINE COLOMBIA S.A.S.</cbc:RegistrationName>
+      <cbc:CompanyID schemeAgencyID="195" schemeID="0" schemeName="31">890900076</cbc:CompanyID>
+      <cbc:TaxLevelCode listName="No aplica">O-13</cbc:TaxLevelCode>
+      <cac:TaxScheme>
+        <cbc:ID>01</cbc:ID>
+        <cbc:Name>IVA</cbc:Name>
+      </cac:TaxScheme>
+    </cac:PartyTaxScheme>
+  </cac:SenderParty>
+  <cac:ReceiverParty>
+    <cac:PartyTaxScheme>
+      <cbc:RegistrationName>CLIENTE DE PRUEBA</cbc:RegistrationName>
+      <cbc:CompanyID schemeAgencyID="195" schemeID="5" schemeName="13">1234567890</cbc:CompanyID>
+      <cbc:TaxLevelCode listName="No aplica">R-99-PN</cbc:TaxLevelCode>
+      <cac:TaxScheme>
+        <cbc:ID>ZZ</cbc:ID>
+        <cbc:Name>No aplica</cbc:Name>
+      </cac:TaxScheme>
+    </cac:PartyTaxScheme>
+  </cac:ReceiverParty>
+  <cac:Attachment>
+    <cac:ExternalReference>
+      <cbc:MimeCode>text/xml</cbc:MimeCode>
+      <cbc:EncodingCode>UTF-8</cbc:EncodingCode>
+      <cbc:Description><![CDATA[<?xml version="1.0" encoding="utf-8"?>
+<Invoice xmlns="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sts="dian:gov:co:facturaelectronica:Structures-2-1" xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" xsi:schemaLocation="urn:oasis:names:specification:ubl:schema:xsd:Invoice-2 http://docs.oasis-open.org/ubl/os-UBL-2.1/xsd/maindoc/UBL-Invoice-2.1.xsd">
+  <ext:UBLExtensions>
+    <ext:UBLExtension>
+      <ext:ExtensionContent>
+        <sts:DianExtensions>
+          <sts:InvoiceControl>
+            <sts:InvoiceAuthorization>18764112411286</sts:InvoiceAuthorization>
+            <sts:AuthorizationPeriod>
+              <cbc:StartDate>2026-07-10</cbc:StartDate>
+              <cbc:EndDate>2028-07-10</cbc:EndDate>
+            </sts:AuthorizationPeriod>
+            <sts:AuthorizedInvoices>
+              <sts:Prefix>ENVG</sts:Prefix>
+              <sts:From>447214</sts:From>
+              <sts:To>20000000</sts:To>
+            </sts:AuthorizedInvoices>
+          </sts:InvoiceControl>
+          <sts:InvoiceSource>
+            <cbc:IdentificationCode listAgencyID="6" listAgencyName="United Nations Economic Commission for Europe" listSchemeURI="urn:oasis:names:specification:ubl:codelist:gc:CountryIdentificationCode-2.1">CO</cbc:IdentificationCode>
+          </sts:InvoiceSource>
+          <sts:SoftwareProvider>
+            <sts:ProviderID schemeName="31" schemeID="4" schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">900306823</sts:ProviderID>
+            <sts:SoftwareID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">e95cb69b-5580-4e66-b094-0167b1511b5d</sts:SoftwareID>
+          </sts:SoftwareProvider>
+          <sts:SoftwareSecurityCode schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">9e27054dff0235d6fdbcfbfc39859d751b0f294f5f489ed3cf5bb8284e5d3d2e93a27b30f700490ea8d7bc0f2a13150c</sts:SoftwareSecurityCode>
+          <sts:AuthorizationProvider>
+            <sts:AuthorizationProviderID schemeID="4" schemeName="31" schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">800197268</sts:AuthorizationProviderID>
+          </sts:AuthorizationProvider>
+          <sts:QRCode>https://catalogo-vpfe.dian.gov.co/document/searchqr?documentkey=da43f6cb657bb0867766d866c26b5ec42717f778d9c2f57fa06962b9a5f53281de1cff255514d2cb2abfab7b224db207</sts:QRCode>
+        </sts:DianExtensions>
+      </ext:ExtensionContent>
+    </ext:UBLExtension>
+    <ext:UBLExtension>
+      <ext:ExtensionContent><ds:Signature Id="xmldsig-175a5b2f-95b8-45a5-9faf-c226e3511852">
+<ds:SignedInfo>
+<ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" />
+<ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" />
+<ds:Reference Id="xmldsig-175a5b2f-95b8-45a5-9faf-c226e3511852-ref0" URI="">
+<ds:Transforms>
+<ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" />
+</ds:Transforms>
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+<ds:DigestValue>JFB6Gg3O9MjRhnKzDItiJlVzhp9R58YchcBJC0vrVlE=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference Id="xmldsig-175a5b2f-95b8-45a5-9faf-c226e3511852-ref1" URI="#KeyInfo">
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+<ds:DigestValue>E1xZjGEs2hG7ItBB8nj2l0aIxdFzMgWM8UgYTkR6yKc=</ds:DigestValue>
+</ds:Reference>
+<ds:Reference Id="xmldsig-175a5b2f-95b8-45a5-9faf-c226e3511852-ref2" URI="#SignedPropertiesId" Type="http://uri.etsi.org/01903#SignedProperties">
+<ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" />
+<ds:DigestValue>Wi5kkVEwRceQCBtN3E5lZ00r+l5A8atJIbJnpcXndQI=</ds:DigestValue>
+</ds:Reference>
+</ds:SignedInfo>
+<ds:SignatureValue>
+BrLW6Gi+NGgDXguFhxPS9F8FO/2QSqmDnmQuEJP5NsoWOdZkfswjJbWeS0hhAOs3swdkYDb9BtQl
+bxdDIUY93eRbC327YtbR0RpbaXIGfzos1rwpGHDUu+5a73bMdJTd+Us3+0Iz8nMxQ+tDuN9AKKwO
+cbKkpRqoMfoWxLiS07KzQFJMNe0Dzl1Spx//e9HRb3QxhlRhh09+wYJHdqfCrt2jevZQoJbbvB6b
+fku7EkctKNzLLdFUVdRIeHt45ddVGZzK1xeZ0bjsNQeJswITmmkSWL8FVkmCbYLGLwGut+qca+73
+UpwG3uApAZf/X4aNjma7hRSEKs/rQUOny7p/jw==
+</ds:SignatureValue>
+<ds:KeyInfo Id="KeyInfo">
+<ds:X509Data>
+<ds:X509Certificate>
+MIIIGzCCBgOgAwIBAgIIXwVROquAni4wDQYJKoZIhvcNAQELBQAwgbYxIzAhBgkqhkiG9w0BCQEW
+FGluZm9AYW5kZXNzY2QuY29tLmNvMSYwJAYDVQQDEx1DQSBBTkRFUyBTQ0QgUy5BLiBDbGFzZSBJ
+SSB2MzEwMC4GA1UECxMnRGl2aXNpb24gZGUgY2VydGlmaWNhY2lvbiBlbnRpZGFkIGZpbmFsMRIw
+EAYDVQQKEwlBbmRlcyBTQ0QxFDASBgNVBAcTC0JvZ290YSBELkMuMQswCQYDVQQGEwJDTzAeFw0y
+NDEwMTgyMTQyMTlaFw0yNjEwMTgyMTQxMTlaMIIBazFGMEQGA1UECRM9QUsgNDUgMTA4IDI3IEVE
+IENFTlRSTyBFTVBSRVNBUklBTCBQQVJBTEVMTyAxMDggT0YgOTA2IEIgVE8gMjEjMCEGCSqGSIb3
+DQEJARYUY29udGFjdG9AZnltdGVjaC5jb20xIDAeBgNVBAMTF0YgWSBNIFRFQ0hOT0xPR1kgUy5B
+LlMuMRMwEQYDVQQFEwo5MDAzMDY4MjM0MTYwNAYDVQQMEy1FbWlzb3IgRmFjdHVyYSBFbGVjdHJv
+bmljYSAtIFBlcnNvbmEgSnVyaWRpY2ExOzA5BgNVBAsTMkVtaXRpZG8gcG9yIEFuZGVzIFNDRCBB
+YyAyNiA2OSBDIDAzIFRvcnJlIEIgT2YgNzAxMRwwGgYDVQQKExNSZXByZXNlbnRhbnRlIExlZ2Fs
+MQ8wDQYDVQQHEwZCT0dPVEExFDASBgNVBAgTC0JPR09UQSBELkMuMQswCQYDVQQGEwJDTzCCASIw
+DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBANvRoTwmfvMOiz+IaFPz7d8Wm2AyMbMOg5vmO8le
+SuoNfijGgjOQvWxJcY26Ql1dtY1Ci1MfLaGGhhnoIcf3j/nkXT0FsfUkwtJ0W+4olYEzmUAE3I4q
+PGLPYDfzSU8VsvuNBqwBjwdKER1Jy8sgtJ/Fk3RoTmdwlIvGBSwRWARIQUJbZstZH611ndOWf7eh
+3mcvRXtJLyKiY7oIk/QGt+rZIN0hAOduOgDR8VYLkZXKQHLk248cB0K9DkevQen8j81jRUAJDY6k
+TEgw/nNn1aZEhcwpx4+CPc4cRPHPdM4p2sdiOnKHvdsHcSeoV641YKhAz45j/3jAGRD/la6+GX8C
+AwEAAaOCAnMwggJvMAwGA1UdEwEB/wQCMAAwHwYDVR0jBBgwFoAUQP4maUcyJzLRrCHILuzPjdU1
+aOgwbwYIKwYBBQUHAQEEYzBhMDYGCCsGAQUFBzAChipodHRwOi8vY2VydHMuYW5kZXNzY2QuY29t
+LmNvL0NsYXNlSUl2My5jcnQwJwYIKwYBBQUHMAGGG2h0dHA6Ly9vY3NwLmFuZGVzc2NkLmNvbS5j
+bzAfBgNVHREEGDAWgRRjb250YWN0b0BmeW10ZWNoLmNvbTCCASEGA1UdIASCARgwggEUMIHABgwr
+BgEEAYH0SAECBgkwga8wgawGCCsGAQUFBwICMIGfDIGcTGEgdXRpbGl6YWNpw7NuIGRlIGVzdGUg
+Y2VydGlmaWNhZG8gZXN0w6Egc3VqZXRhIGEgbGEgUEMgZGUgRmFjdHVyYWNpw7NuIEVsZWN0csOz
+bmljYSB5IERQQyBlc3RhYmxlY2lkYXMgcG9yIEFuZGVzIFNDRC4gQ8OzZGlnbyBkZSBBY3JlZGl0
+YWNpw7NuOiAxNi1FQ0QtMDA0ME8GDCsGAQQBgfRIAQEBCzA/MD0GCCsGAQUFBwIBFjFodHRwczov
+L3d3dy5hbmRlc3NjZC5jb20uY28vZG9jcy9EUENfQW5kZXNTQ0QucGRmMB0GA1UdJQQWMBQGCCsG
+AQUFBwMCBggrBgEFBQcDBDA5BgNVHR8EMjAwMC6gLKAqhihodHRwOi8vY3JsLmFuZGVzc2NkLmNv
+bS5jby9DbGFzZUlJdjMuY3JsMB0GA1UdDgQWBBTN/M9t4fnnvITHIaqr4Bf3lFmSzjAOBgNVHQ8B
+Af8EBAMCBeAwDQYJKoZIhvcNAQELBQADggIBAFT/Ss0CxKkApnPoS0NxrqCZGx911ESGM8dV6bWb
+Wi5s1MLdtUzuTNR1y8CbOOd57hiyPufSWv2G0kq7/YJE6Z5an5l2DnuxK3wad5F/kcVSm+DKVs4R
+SvL+CRCz0al7cwHfu3sNHsqFgh6vmNetLFelwpQHGZsis19d+S5Z2+ApI7UxHilJqEZ9pyt1TwxO
+TJi7CbXQWgl4KOgg0ROLJpQZi4kNwv6rE2+zcGt+uzP0ARn+Z18trd1OfOe+gS2uHsa5MPxv67fr
+s1iKxYiPYNwNnqD5vMjSVW+0oMIvCnyQ5x/XptAvQE5kBbd1H7aIxP12tsS+aqX4FeNS+puCM2Ug
+Qu95/X12JxaRt9wMLPsUi+FO//b2SZdLH6fhAuwlAmXB97iquKrHBn6rf4Z+65Jp+Kk2oLTJtG36
+f8Qh4RzCPhG8/fD1H2ZYRNNb1zvRWBlZuH/Pccf9tP0FmYIHn2IIHTFK7N+NNEhEDkKYqxDyD/bc
+WLeecij9Epv+kdTIiafnO4UKvACfZRfMAvRxF2F0AykX4eBTuC+yvYGPbF5bkTh5kz2xVhp+ua+V
+keThQt9vQy8w+KhNRkfWhsIDwor4ZDHl6kUwFEoC5VAf4pugrJHGeDdD8eQ55r1PRG6fZpIAAkTZ
+0veKUMZuQYM0VGbUExmy0S7U2qke/qyqiSoc
+</ds:X509Certificate>
+</ds:X509Data>
+</ds:KeyInfo>
+<ds:Object><xades:QualifyingProperties xmlns:xades141="http://uri.etsi.org/01903/v1.4.1#" Target="#xmldsig-175a5b2f-95b8-45a5-9faf-c226e3511852"><xades:SignedProperties Id="SignedPropertiesId"><xades:SignedSignatureProperties><xades:SigningTime>2026-07-24T21:27:41.802-05:00</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>hBTf4XO5/Zd6Tb+a9yd0vcHDQ2MqM9uNbjJ/Q91zark=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>C=CO,L=Bogota D.C.,O=Andes SCD,OU=Division de certificacion entidad final,CN=CA ANDES SCD S.A. Clase II v3,1.2.840.113549.1.9.1=#1614696e666f40616e6465737363642e636f6d2e636f</ds:X509IssuerName><ds:X509SerialNumber>6846968120913993262</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate><xades:SignaturePolicyIdentifier><xades:SignaturePolicyId><xades:SigPolicyId><xades:Identifier>https://facturaelectronica.dian.gov.co/politicadefirma/v2/politicadefirmav2.pdf</xades:Identifier></xades:SigPolicyId><xades:SigPolicyHash><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>dMoMvtcG5aIzgYo0tIsSQeVJBDnUnfSOfBpxXrmor0Y=</ds:DigestValue></xades:SigPolicyHash></xades:SignaturePolicyId></xades:SignaturePolicyIdentifier><xades:SignerRole><xades:ClaimedRoles><xades:ClaimedRole>supplier</xades:ClaimedRole></xades:ClaimedRoles></xades:SignerRole></xades:SignedSignatureProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object>
+</ds:Signature></ext:ExtensionContent>
+    </ext:UBLExtension>
+    <ext:UBLExtension>
+      <ext:ExtensionContent>
+        <ShowroomInformation>
+          <Showroom></Showroom>
+          <ShowroomAddress></ShowroomAddress>
+          <DataShow>
+            <ExhibitionRoom>9</ExhibitionRoom>
+            <TotalChairs>127</TotalChairs>
+            <NameFunction>Obsession</NameFunction>
+            <SelectLocation></SelectLocation>
+            <DateFunction>25-07-2026</DateFunction>
+            <TimeFunction>10 a. m.</TimeFunction>
+          </DataShow>
+        </ShowroomInformation>
+      </ext:ExtensionContent>
+    </ext:UBLExtension>
+  </ext:UBLExtensions>
+  <cbc:UBLVersionID>UBL 2.1</cbc:UBLVersionID>
+  <cbc:CustomizationID>10</cbc:CustomizationID>
+  <cbc:ProfileID>DIAN 2.1: Factura Electrónica de Venta</cbc:ProfileID>
+  <cbc:ProfileExecutionID>1</cbc:ProfileExecutionID>
+  <cbc:ID>ENVG495822</cbc:ID>
+  <cbc:UUID schemeID="1" schemeName="CUFE-SHA384">da43f6cb657bb0867766d866c26b5ec42717f778d9c2f57fa06962b9a5f53281de1cff255514d2cb2abfab7b224db207</cbc:UUID>
+  <cbc:IssueDate>2026-07-24</cbc:IssueDate>
+  <cbc:IssueTime>21:27:39-05:00</cbc:IssueTime>
+  <cbc:DueDate>2026-07-24</cbc:DueDate>
+  <cbc:InvoiceTypeCode>01</cbc:InvoiceTypeCode>
+  <cbc:Note xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">1</cbc:Note>
+  <cbc:TaxPointDate>2026-07-24</cbc:TaxPointDate>
+  <cbc:DocumentCurrencyCode>COP</cbc:DocumentCurrencyCode>
+  <cbc:AccountingCostCode></cbc:AccountingCostCode>
+  <cbc:LineCountNumeric>2</cbc:LineCountNumeric>
+  <cac:InvoicePeriod>
+    <cbc:StartDate>0001-01-01</cbc:StartDate>
+    <cbc:EndDate>0001-01-01</cbc:EndDate>
+  </cac:InvoicePeriod>
+  <cac:OrderReference>
+    <cbc:ID>730699</cbc:ID>
+  </cac:OrderReference>
+  <cac:AccountingSupplierParty>
+    <cbc:AdditionalAccountID>1</cbc:AdditionalAccountID>
+    <cac:Party>
+      <cbc:IndustryClassificationCode>5914;5612;.</cbc:IndustryClassificationCode>
+      <cac:PartyName>
+        <cbc:Name>CINE COLOMBIA S.A.S.</cbc:Name>
+      </cac:PartyName>
+      <cac:PhysicalLocation>
+        <cac:Address>
+          <cbc:ID>11001</cbc:ID>
+          <cbc:CityName>BOGOTA, D.C.</cbc:CityName>
+          <cbc:PostalZone>111111</cbc:PostalZone>
+          <cbc:CountrySubentity>BOGOTA</cbc:CountrySubentity>
+          <cbc:CountrySubentityCode>11</cbc:CountrySubentityCode>
+          <cac:AddressLine>
+            <cbc:Line>CRA. 13 38-85 PISO 4</cbc:Line>
+          </cac:AddressLine>
+          <cac:Country>
+            <cbc:IdentificationCode>CO</cbc:IdentificationCode>
+            <cbc:Name languageID="es">Colombia</cbc:Name>
+          </cac:Country>
+        </cac:Address>
+      </cac:PhysicalLocation>
+      <cac:PartyTaxScheme>
+        <cbc:RegistrationName>CINE COLOMBIA S.A.S.</cbc:RegistrationName>
+        <cbc:CompanyID schemeID="0" schemeName="31" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeAgencyID="195">890900076</cbc:CompanyID>
+        <cbc:TaxLevelCode listName="No aplica">O-13</cbc:TaxLevelCode>
+        <cac:RegistrationAddress>
+          <cbc:ID>11001</cbc:ID>
+          <cbc:CityName>BOGOTA, D.C.</cbc:CityName>
+          <cbc:CountrySubentity>BOGOTA</cbc:CountrySubentity>
+          <cbc:CountrySubentityCode>11</cbc:CountrySubentityCode>
+          <cac:AddressLine>
+            <cbc:Line>CRA. 13 38-85 PISO 4</cbc:Line>
+          </cac:AddressLine>
+          <cac:Country>
+            <cbc:IdentificationCode>CO</cbc:IdentificationCode>
+            <cbc:Name languageID="es">Colombia</cbc:Name>
+          </cac:Country>
+        </cac:RegistrationAddress>
+        <cac:TaxScheme>
+          <cbc:ID>01</cbc:ID>
+          <cbc:Name>IVA</cbc:Name>
+        </cac:TaxScheme>
+      </cac:PartyTaxScheme>
+      <cac:PartyLegalEntity>
+        <cbc:RegistrationName>CINE COLOMBIA S.A.S.</cbc:RegistrationName>
+        <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="0" schemeName="31">890900076</cbc:CompanyID>
+        <cac:CorporateRegistrationScheme>
+          <cbc:ID>ENVG</cbc:ID>
+        </cac:CorporateRegistrationScheme>
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+        <cbc:Name>K_6F6F6F6F</cbc:Name>
+        <cbc:Telephone>57 1 756 9898</cbc:Telephone>
+        <cbc:ElectronicMail>facturaelectronica@cinecolombia.com</cbc:ElectronicMail>
+      </cac:Contact>
+    </cac:Party>
+  </cac:AccountingSupplierParty>
+  <cac:AccountingCustomerParty>
+    <cbc:AdditionalAccountID>2</cbc:AdditionalAccountID>
+    <cac:Party>
+      <cac:PartyIdentification>
+        <cbc:ID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="5" schemeName="13">1234567890</cbc:ID>
+      </cac:PartyIdentification>
+      <cac:PartyName>
+        <cbc:Name></cbc:Name>
+      </cac:PartyName>
+      <cac:PhysicalLocation>
+        <cac:Address>
+          <cbc:ID>05266</cbc:ID>
+          <cbc:CityName>ENVIGADO</cbc:CityName>
+          <cbc:PostalZone>111111</cbc:PostalZone>
+          <cbc:CountrySubentity>ANTIOQUIA</cbc:CountrySubentity>
+          <cbc:CountrySubentityCode>05</cbc:CountrySubentityCode>
+          <cac:AddressLine>
+            <cbc:Line></cbc:Line>
+          </cac:AddressLine>
+          <cac:Country>
+            <cbc:IdentificationCode>CO</cbc:IdentificationCode>
+            <cbc:Name languageID="es">Colombia</cbc:Name>
+          </cac:Country>
+        </cac:Address>
+      </cac:PhysicalLocation>
+      <cac:PartyTaxScheme>
+        <cbc:RegistrationName>CLIENTE DE PRUEBA</cbc:RegistrationName>
+        <cbc:CompanyID schemeID="5" schemeName="13" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeAgencyID="195">1234567890</cbc:CompanyID>
+        <cbc:TaxLevelCode listName="No aplica *">R-99-PN</cbc:TaxLevelCode>
+        <cac:RegistrationAddress>
+          <cbc:ID>05266</cbc:ID>
+          <cbc:CityName>ENVIGADO</cbc:CityName>
+          <cbc:CountrySubentity>ANTIOQUIA</cbc:CountrySubentity>
+          <cbc:CountrySubentityCode>05</cbc:CountrySubentityCode>
+          <cac:AddressLine>
+            <cbc:Line></cbc:Line>
+          </cac:AddressLine>
+          <cac:Country>
+            <cbc:IdentificationCode>CO</cbc:IdentificationCode>
+            <cbc:Name languageID="es">Colombia</cbc:Name>
+          </cac:Country>
+        </cac:RegistrationAddress>
+        <cac:TaxScheme>
+          <cbc:ID>ZZ</cbc:ID>
+          <cbc:Name>No aplica</cbc:Name>
+        </cac:TaxScheme>
+      </cac:PartyTaxScheme>
+      <cac:PartyLegalEntity xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+        <cbc:RegistrationName>CLIENTE DE PRUEBA</cbc:RegistrationName>
+        <cbc:CompanyID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeID="5" schemeName="13">1234567890</cbc:CompanyID>
+        <cac:ShareholderParty>
+          <cbc:PartecipationPercent>100</cbc:PartecipationPercent>
+        </cac:ShareholderParty>
+      </cac:PartyLegalEntity>
+      <cac:Contact>
+        <cbc:Name></cbc:Name>
+        <cbc:Telephone></cbc:Telephone>
+        <cbc:ElectronicMail>cliente@example.com</cbc:ElectronicMail>
+      </cac:Contact>
+    </cac:Party>
+  </cac:AccountingCustomerParty>
+  <cac:TaxRepresentativeParty>
+    <cac:PartyIdentification>
+      <cbc:ID schemeName="13" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)" schemeAgencyID="195">900306823</cbc:ID>
+    </cac:PartyIdentification>
+    <cac:PartyName>
+      <cbc:Name></cbc:Name>
+    </cac:PartyName>
+  </cac:TaxRepresentativeParty>
+  <cac:PaymentMeans xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    <cbc:ID>1</cbc:ID>
+    <cbc:PaymentMeansCode>48</cbc:PaymentMeansCode>
+    <cbc:PaymentDueDate>2026-07-24</cbc:PaymentDueDate>
+    <cbc:PaymentID></cbc:PaymentID>
+  </cac:PaymentMeans>
+  <cac:TaxTotal xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    <cbc:TaxAmount currencyID="COP">510.92</cbc:TaxAmount>
+    <cbc:RoundingAmount currencyID="COP">0</cbc:RoundingAmount>
+    <cbc:TaxEvidenceIndicator>false</cbc:TaxEvidenceIndicator>
+    <cac:TaxSubtotal xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+      <cbc:TaxableAmount currencyID="COP">2689.08</cbc:TaxableAmount>
+      <cbc:TaxAmount currencyID="COP">510.92</cbc:TaxAmount>
+      <cbc:Percent>19.00</cbc:Percent>
+      <cbc:BaseUnitMeasure unitCode="94">1</cbc:BaseUnitMeasure>
+      <cbc:PerUnitAmount currencyID="COP">0.00</cbc:PerUnitAmount>
+      <cac:TaxCategory>
+        <cbc:Percent>19.00</cbc:Percent>
+        <cac:TaxScheme>
+          <cbc:ID>01</cbc:ID>
+          <cbc:Name>IVA</cbc:Name>
+        </cac:TaxScheme>
+      </cac:TaxCategory>
+    </cac:TaxSubtotal>
+  </cac:TaxTotal>
+  <cac:LegalMonetaryTotal>
+    <cbc:LineExtensionAmount currencyID="COP">26689.08</cbc:LineExtensionAmount>
+    <cbc:TaxExclusiveAmount currencyID="COP">2689.08</cbc:TaxExclusiveAmount>
+    <cbc:TaxInclusiveAmount currencyID="COP">27200.00</cbc:TaxInclusiveAmount>
+    <cbc:AllowanceTotalAmount currencyID="COP">0.00</cbc:AllowanceTotalAmount>
+    <cbc:ChargeTotalAmount currencyID="COP">0.00</cbc:ChargeTotalAmount>
+    <cbc:PrepaidAmount currencyID="COP">0.00</cbc:PrepaidAmount>
+    <cbc:PayableAmount currencyID="COP">27200.00</cbc:PayableAmount>
+  </cac:LegalMonetaryTotal>
+  <cac:InvoiceLine xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    <cbc:ID>1</cbc:ID>
+    <cbc:Note></cbc:Note>
+    <cbc:InvoicedQuantity unitCode="94">2.000000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">2689.08</cbc:LineExtensionAmount>
+    <cbc:FreeOfChargeIndicator>false</cbc:FreeOfChargeIndicator>
+    <cac:TaxTotal xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+      <cbc:TaxAmount currencyID="COP">510.920000</cbc:TaxAmount>
+      <cbc:RoundingAmount currencyID="COP">0.000000</cbc:RoundingAmount>
+      <cbc:TaxEvidenceIndicator>false</cbc:TaxEvidenceIndicator>
+      <cac:TaxSubtotal xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+        <cbc:TaxableAmount currencyID="COP">2689.080000</cbc:TaxableAmount>
+        <cbc:TaxAmount currencyID="COP">510.920000</cbc:TaxAmount>
+        <cbc:Percent>19.00</cbc:Percent>
+        <cbc:BaseUnitMeasure unitCode="94">1</cbc:BaseUnitMeasure>
+        <cbc:PerUnitAmount currencyID="COP">0.000000</cbc:PerUnitAmount>
+        <cac:TaxCategory>
+          <cbc:Percent>19.00</cbc:Percent>
+          <cac:TaxScheme>
+            <cbc:ID>01</cbc:ID>
+            <cbc:Name>IVA</cbc:Name>
+          </cac:TaxScheme>
+        </cac:TaxCategory>
+      </cac:TaxSubtotal>
+    </cac:TaxTotal>
+    <cac:Item>
+      <cbc:Description>Cargo por Servicio </cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>1</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999" schemeName="Estandar de adopcion del contribuyente" />
+      </cac:StandardItemIdentification>
+      <cac:ItemInstance>
+        <cac:LotIdentification>
+          <cbc:LotNumberID />
+        </cac:LotIdentification>
+      </cac:ItemInstance>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">1344.54</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="94">2.00</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+  <cac:InvoiceLine xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2">
+    <cbc:ID>2</cbc:ID>
+    <cbc:Note></cbc:Note>
+    <cbc:InvoicedQuantity unitCode="94">2.000000</cbc:InvoicedQuantity>
+    <cbc:LineExtensionAmount currencyID="COP">24000.00</cbc:LineExtensionAmount>
+    <cbc:FreeOfChargeIndicator>false</cbc:FreeOfChargeIndicator>
+    <cac:Item>
+      <cbc:Description>Silla Preferencial Pelicula: Obsession </cbc:Description>
+      <cac:SellersItemIdentification>
+        <cbc:ID>0008</cbc:ID>
+      </cac:SellersItemIdentification>
+      <cac:StandardItemIdentification>
+        <cbc:ID schemeID="999" schemeName="Estandar de adopcion del contribuyente" />
+      </cac:StandardItemIdentification>
+      <cac:ItemInstance>
+        <cac:LotIdentification>
+          <cbc:LotNumberID />
+        </cac:LotIdentification>
+      </cac:ItemInstance>
+    </cac:Item>
+    <cac:Price>
+      <cbc:PriceAmount currencyID="COP">12000.00</cbc:PriceAmount>
+      <cbc:BaseQuantity unitCode="94">2.00</cbc:BaseQuantity>
+    </cac:Price>
+  </cac:InvoiceLine>
+</Invoice>]]></cbc:Description>
+    </cac:ExternalReference>
+  </cac:Attachment>
+  <cac:ParentDocumentLineReference>
+    <cbc:LineID>1</cbc:LineID>
+    <cac:DocumentReference>
+      <cbc:ID>ENVG495822</cbc:ID>
+      <cbc:UUID schemeName="CUFE-SHA384">da43f6cb657bb0867766d866c26b5ec42717f778d9c2f57fa06962b9a5f53281de1cff255514d2cb2abfab7b224db207</cbc:UUID>
+      <cbc:IssueDate>2026-07-24</cbc:IssueDate>
+      <cbc:DocumentType>ApplicationResponse</cbc:DocumentType>
+      <cac:Attachment>
+        <cac:ExternalReference>
+          <cbc:MimeCode>text/xml</cbc:MimeCode>
+          <cbc:EncodingCode>UTF-8</cbc:EncodingCode>
+          <cbc:Description><![CDATA[<?xml version="1.0" encoding="utf-8" standalone="no"?><ApplicationResponse xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:ext="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2" xmlns:sts="dian:gov:co:facturaelectronica:Structures-2-1" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:oasis:names:specification:ubl:schema:xsd:ApplicationResponse-2">
+  <ext:UBLExtensions>
+    <ext:UBLExtension>
+      <ext:ExtensionContent>
+        <sts:DianExtensions>
+          <sts:InvoiceSource>
+            <cbc:IdentificationCode listAgencyID="6" listAgencyName="United Nations Economic Commission for Europe" listSchemeURI="urn:oasis:names:specification:ubl:codelist:gc:CountryIdentificationCode-2.1">CO</cbc:IdentificationCode>
+          </sts:InvoiceSource>
+          <sts:SoftwareProvider>
+            <sts:ProviderID schemeID="4" schemeName="31" schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">800197268</sts:ProviderID>
+            <sts:SoftwareID schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">...</sts:SoftwareID>
+          </sts:SoftwareProvider>
+          <sts:SoftwareSecurityCode schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">...</sts:SoftwareSecurityCode>
+          <sts:AuthorizationProvider>
+            <sts:AuthorizationProviderID schemeID="4" schemeName="31" schemeAgencyID="195" schemeAgencyName="CO, DIAN (Dirección de Impuestos y Aduanas Nacionales)">800197268</sts:AuthorizationProviderID>
+          </sts:AuthorizationProvider>
+        </sts:DianExtensions>
+      </ext:ExtensionContent>
+    </ext:UBLExtension>
+    <ext:UBLExtension>
+      <ext:ExtensionContent><ds:Signature xmlns:ds="http://www.w3.org/2000/09/xmldsig#" Id="Signature-5efb1a56-898d-4926-92aa-10895237e2c6"><ds:SignedInfo><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315" /><ds:SignatureMethod Algorithm="http://www.w3.org/2001/04/xmldsig-more#rsa-sha256" /><ds:Reference Id="Reference-e140044f-ddec-4c21-9485-7d6fa0e51609" URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>5Nb9C/OiGjZVdH1E0AmqhRIADV6dxIyFXY4IGBRBKak=</ds:DigestValue></ds:Reference><ds:Reference Id="ReferenceKeyInfo" URI="#Signature-5efb1a56-898d-4926-92aa-10895237e2c6-KeyInfo"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>tC8ZCIR1oeWNJcQ/rstFctoo5xPjHY0MNQawXiryKBg=</ds:DigestValue></ds:Reference><ds:Reference Type="http://uri.etsi.org/01903#SignedProperties" URI="#xmldsig-Signature-5efb1a56-898d-4926-92aa-10895237e2c6-signedprops"><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>6TBMqUv3ZMZi6UdHl3nbUGnybGhQe4ZoYE7plmR5NgU=</ds:DigestValue></ds:Reference></ds:SignedInfo><ds:SignatureValue Id="SignatureValue-5efb1a56-898d-4926-92aa-10895237e2c6">irgv5cinqfSK112LAeHF95bpX53IS5WkuduPzqrIf3es5RMFTGEB4Khm23QXzEddzb2s62pPocfzHoDPFjKQkquc6coIulylXOTwG3L44YqI35BNFU2HmggPFxy+ohd5hPXTUgU8scZ5Kldj9hk4/zPTS0zXvE5BpK0FzpKFZWx7d48oxiYRLCKM0MlEDGWyH6a8yfOjZJwo6PgK7jGu9vB7Rc4giPz8GqrdKTaLJ2Fl5cQoZa04cmsI92+7dVgDcAXWbj/ReXUdzCqPIw2fdt7UonD7S84DcUj/aMXUaxbpWc74v1OU3gYAWqc/KKaA8VqCsgcF2mPIidZYoPKNIg==</ds:SignatureValue><ds:KeyInfo Id="Signature-5efb1a56-898d-4926-92aa-10895237e2c6-KeyInfo"><ds:X509Data><ds:X509Certificate>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</ds:X509Certificate></ds:X509Data><ds:KeyValue><ds:RSAKeyValue><ds:Modulus>mHDB0j0kiTFPi1kD6jcJ/Ypwcl4m3Qg0i+s1IB9atBk89Dj0o0QHMhTNqBpVLIjp+5Szvs6glnVDAXQzeajaLKgyb1KnAaz7DvF6coN4i1VvBRSFnoI2cs8BgOdxcU/aOLQTrDUgML405AXIMLuTIqSStq5OVD/BvPZU/5sD1co4s5evZShNRv0xVLkKpR7+ACqpdbfvrIVdq8ljY7Do/OmWDSz2duJ3JXeXrSMpPJ2ITI/acOGsjs+MV5Po0p71OsQCB/b4Mpkt7d5CX8XKeyZywRkk/93hWDcBaGkn0X8dqrgYJTBdfsBHXjC+ZjOmD5w+sRzsq+6eRVAKNcpBJQ==</ds:Modulus><ds:Exponent>AQAB</ds:Exponent></ds:RSAKeyValue></ds:KeyValue></ds:KeyInfo><ds:Object Id="XadesObjectId-29abda17-60e7-492c-963a-812a7bea99b4"><xades:QualifyingProperties xmlns:xades="http://uri.etsi.org/01903/v1.3.2#" Id="QualifyingProperties-41431a08-9136-47b6-9a12-50b7dbb86ba0" Target="#Signature-5efb1a56-898d-4926-92aa-10895237e2c6"><xades:SignedProperties Id="xmldsig-Signature-5efb1a56-898d-4926-92aa-10895237e2c6-signedprops"><xades:SignedSignatureProperties><xades:SigningTime>2026-07-24T21:27:42+00:00</xades:SigningTime><xades:SigningCertificate><xades:Cert><xades:CertDigest><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>/Kv9kFH+mV9JU3HrYscYDkvN9Ovhdd47L3sm5RsgcUk=</ds:DigestValue></xades:CertDigest><xades:IssuerSerial><ds:X509IssuerName>CN=OlimpiaIT ECD Sub, O=OlimpiaIT, OU=OlimpiaIT ECD, E=servicioalcliente@olimpiait.com, C=CO, S=Bogotá D.C., L=Bogotá D.C., STREET=See current address at https://micertificado.olimpiait.com, OID.2.5.4.45=900032774-4, SERIALNUMBER=900032774-4</ds:X509IssuerName><ds:X509SerialNumber>89407279672106850539243115121212403761</ds:X509SerialNumber></xades:IssuerSerial></xades:Cert></xades:SigningCertificate><xades:SignaturePolicyIdentifier><xades:SignaturePolicyId><xades:SigPolicyId><xades:Identifier>https://facturaelectronica.dian.gov.co/politicadefirma/v2/politicadefirmav2.pdf</xades:Identifier><xades:Description /></xades:SigPolicyId><xades:SigPolicyHash><ds:DigestMethod Algorithm="http://www.w3.org/2001/04/xmlenc#sha256" /><ds:DigestValue>dMoMvtcG5aIzgYo0tIsSQeVJBDnUnfSOfBpxXrmor0Y=</ds:DigestValue></xades:SigPolicyHash></xades:SignaturePolicyId></xades:SignaturePolicyIdentifier><xades:SignerRole><xades:ClaimedRoles><xades:ClaimedRole>supplier</xades:ClaimedRole></xades:ClaimedRoles></xades:SignerRole></xades:SignedSignatureProperties><xades:SignedDataObjectProperties><xades:DataObjectFormat ObjectReference="#Reference-e140044f-ddec-4c21-9485-7d6fa0e51609"><xades:MimeType>text/xml</xades:MimeType><xades:Encoding>UTF-8</xades:Encoding></xades:DataObjectFormat></xades:SignedDataObjectProperties></xades:SignedProperties></xades:QualifyingProperties></ds:Object></ds:Signature></ext:ExtensionContent>
+    </ext:UBLExtension>
+  </ext:UBLExtensions>
+  <cbc:UBLVersionID>UBL 2.1</cbc:UBLVersionID>
+  <cbc:CustomizationID>1</cbc:CustomizationID>
+  <cbc:ProfileID>DIAN 2.1</cbc:ProfileID>
+  <cbc:ProfileExecutionID>1</cbc:ProfileExecutionID>
+  <cbc:ID>52904540</cbc:ID>
+  <cbc:UUID schemeName="CUDE-SHA384">a66896707bd88f81e562de848550798c65708c412b4b5e00f3374c98b4fe7f4433f8d164b0bdd3ac74790057a0cec0c9</cbc:UUID>
+  <cbc:IssueDate>2026-07-24</cbc:IssueDate>
+  <cbc:IssueTime>21:27:42-05:00</cbc:IssueTime>
+  <cac:SenderParty>
+    <cac:PartyTaxScheme>
+      <cbc:RegistrationName>Unidad Especial Dirección de Impuestos y Aduanas Nacionales</cbc:RegistrationName>
+      <cbc:CompanyID schemeID="4" schemeName="31">800197268</cbc:CompanyID>
+      <cac:TaxScheme>
+        <cbc:ID>01</cbc:ID>
+        <cbc:Name>IVA</cbc:Name>
+      </cac:TaxScheme>
+    </cac:PartyTaxScheme>
+  </cac:SenderParty>
+  <cac:ReceiverParty>
+    <cac:PartyTaxScheme>
+      <cbc:RegistrationName>CINE COLOMBIA S.A.S.</cbc:RegistrationName>
+      <cbc:CompanyID schemeID="0" schemeName="31">890900076</cbc:CompanyID>
+      <cac:TaxScheme>
+        <cbc:ID>01</cbc:ID>
+        <cbc:Name>IVA</cbc:Name>
+      </cac:TaxScheme>
+    </cac:PartyTaxScheme>
+  </cac:ReceiverParty>
+  <cac:DocumentResponse>
+    <cac:Response>
+      <cbc:ResponseCode>02</cbc:ResponseCode>
+      <cbc:Description>Documento validado por la DIAN</cbc:Description>
+    </cac:Response>
+    <cac:DocumentReference>
+      <cbc:ID>ENVG495822</cbc:ID>
+      <cbc:UUID schemeName="CUFE-SHA384">da43f6cb657bb0867766d866c26b5ec42717f778d9c2f57fa06962b9a5f53281de1cff255514d2cb2abfab7b224db207</cbc:UUID>
+    </cac:DocumentReference>
+    <cac:LineResponse>
+      <cac:LineReference>
+        <cbc:LineID>1</cbc:LineID>
+      </cac:LineReference>
+      <cac:Response>
+        <cbc:ResponseCode>0000</cbc:ResponseCode>
+        <cbc:Description>0</cbc:Description>
+      </cac:Response>
+    </cac:LineResponse>
+    <cac:LineResponse>
+      <cac:LineReference>
+        <cbc:LineID>2</cbc:LineID>
+      </cac:LineReference>
+      <cac:Response>
+        <cbc:ResponseCode>FAN05</cbc:ResponseCode>
+        <cbc:Description>Identificador del pago no informado</cbc:Description>
+      </cac:Response>
+    </cac:LineResponse>
+    <cac:LineResponse>
+      <cac:LineReference>
+        <cbc:LineID>3</cbc:LineID>
+      </cac:LineReference>
+      <cac:Response>
+        <cbc:ResponseCode>RUT01</cbc:ResponseCode>
+        <cbc:Description>La validación del estado del RUT próximamente estará disponible.</cbc:Description>
+      </cac:Response>
+    </cac:LineResponse>
+    <cac:LineResponse>
+      <cac:LineReference>
+        <cbc:LineID>4</cbc:LineID>
+      </cac:LineReference>
+      <cac:Response>
+        <cbc:ResponseCode>RUT01</cbc:ResponseCode>
+        <cbc:Description>La validación del estado del RUT próximamente estará disponible.</cbc:Description>
+      </cac:Response>
+    </cac:LineResponse>
+  </cac:DocumentResponse>
+</ApplicationResponse>]]></cbc:Description>
+        </cac:ExternalReference>
+      </cac:Attachment>
+      <cac:ResultOfVerification>
+        <cbc:ValidatorID>Unidad Especial Dirección de Impuestos y Aduanas Nacionales</cbc:ValidatorID>
+        <cbc:ValidationResultCode>02</cbc:ValidationResultCode>
+        <cbc:ValidationDate>2026-07-24</cbc:ValidationDate>
+        <cbc:ValidationTime>21:27:42-05:00</cbc:ValidationTime>
+      </cac:ResultOfVerification>
+    </cac:DocumentReference>
+  </cac:ParentDocumentLineReference>
+</AttachedDocument>
