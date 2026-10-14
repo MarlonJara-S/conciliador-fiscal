@@ -3,15 +3,16 @@
 Ver @docs/SPEC.md para el alcance de la versión actual y @docs/PLAN.md para el plan aprobado.
 Descripción del proyecto: `../ruta-ingeniero/04-PROYECTOS-V2.md` (P1). Plan de aprendizaje: `../ruta-ingeniero/05-PLAN-SEMANAL-V2.md`.
 
-## Comandos (Windows)
-- Entorno virtual: `python -m venv .venv` y activar con `.venv\Scripts\activate`
-- Instalar dependencias: `pip install -r requirements.txt -r requirements-dev.txt`
-- Agregar una dependencia: añadirla a `requirements.in` (o `requirements-dev.in`) y regenerar con `pip-compile requirements.in` (y `pip-compile requirements-dev.in`). Nunca editar los `.txt` a mano.
+## Comandos
+Dependencias con uv (ADR 0005): `pyproject.toml` + `uv.lock`. Nunca editar `uv.lock` a mano.
+- Instalar o sincronizar el entorno: `uv sync`
+- Agregar una dependencia: `uv add <paquete>` (desarrollo: `uv add --dev <paquete>`)
 - Servicios locales: `docker compose up -d` (PostgreSQL, Redis)
-- Tests: `pytest -q` (un archivo: `pytest tests/test_x.py -q`)
-- Lint y formato: `ruff check --fix . && ruff format .`
-- Tipos: `mypy src`
-- Migraciones: `alembic upgrade head`
+- Tests: `uv run pytest -q` (un archivo: `uv run pytest tests/test_x.py -q`)
+- Lint y formato: `uv run ruff check --fix . && uv run ruff format .`
+- Tipos: `uv run mypy src`
+- Vulnerabilidades: `uv run pip-audit`
+- Migraciones: `uv run alembic upgrade head`
 
 ## Reglas del proyecto
 - Toda operación que escriba datos a partir de eventos externos (webhooks, correos, colas) debe ser idempotente y tener un test de concurrencia.
@@ -24,7 +25,7 @@ Descripción del proyecto: `../ruta-ingeniero/04-PROYECTOS-V2.md` (P1). Plan de 
 
 ## Aprendizaje
 - IMPORTANT: Estoy aprendiendo los temas de la fase actual del plan. Si la tarea toca uno de ellos, deja la pieza central como TODO(human) con una explicación breve en lugar de implementarla.
-- Fase actual: Fase 1 · Python a fondo y el dominio de P1 (semana 4: modelo de datos de Python, tipado y Pydantic; modelos de la factura)
+- Fase actual: Fase 1 · Python a fondo y el dominio de P1 (semana 5: XML seguro con lxml, UBL 2.1, ataques XXE; parser de la factura)
 - Ayuda en tres niveles: primero una pista, luego una explicación, y solo si lo pido, el código.
 
 ## Al compactar
