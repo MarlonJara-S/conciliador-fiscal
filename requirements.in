@@ -1,6 +1,0 @@
-# dependencias de producción
-
-psycopg[binary]
-redis
-pydantic-settings
-pydantic
