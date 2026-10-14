@@ -20,6 +20,9 @@ from pathlib import Path
 
 SOURCE_DIR = Path("data/private/facturas")
 TARGET_DIR = Path("tests/fixtures/invoices")
+# Optional, private: personal values the script cannot detect on its own
+# (another ID, a nickname, an old email...), one per line. Never committed.
+EXTRA_VALUES_FILE = Path("data/private/extra_personal_values.txt")
 
 FAKE_NAME = "CLIENTE DE PRUEBA"
 FAKE_EMAIL = "cliente@example.com"
@@ -34,6 +37,10 @@ CUSTOMER_BLOCK = re.compile(
 )
 # A CUFE or CUDE: a SHA-384 hash written as 96 hexadecimal characters.
 DOCUMENT_ID = re.compile(r"(?<![0-9a-fA-F])[0-9a-fA-F]{96}(?![0-9a-fA-F])")
+# Some issuers print the raw text used to compute the CUFE: all invoice fields glued
+# together, including the customer's ID. No test needs it, so its content is removed.
+CUFE_INPUT_NOTE = re.compile(r"(String:)[^<]*")
+MIN_STRICT_NUMBER_LENGTH = 8  # long numbers (IDs) are searched even inside other digits
 
 # Each pattern captures one personal value inside the customer block, with its kind.
 PERSONAL_FIELDS = [
@@ -86,6 +93,20 @@ def find_personal_values(xml: str) -> dict[str, str]:
     return replacements
 
 
+def read_extra_values() -> dict[str, str]:
+    """Personal values listed by hand in the private file, with their fakes."""
+    if not EXTRA_VALUES_FILE.exists():
+        return {}
+    extra: dict[str, str] = {}
+    for raw_line in EXTRA_VALUES_FILE.read_text(encoding="utf-8").splitlines():
+        value = raw_line.strip()
+        if not value or value.startswith("#"):
+            continue
+        kind = "number" if value.isdigit() else "email" if "@" in value else "name"
+        extra[value] = fake_value(value, kind)
+    return extra
+
+
 def replace_value(xml: str, value: str, fake: str) -> str:
     if value.isdigit():
         # Do not touch the same digits when they are part of a longer number.
@@ -102,16 +123,23 @@ def anonymize(xml: str, personal: dict[str, str]) -> str:
     # Longest first, so a full name is replaced before any of its words.
     for value in sorted(personal, key=len, reverse=True):
         xml = replace_value(xml, value, personal[value])
+    xml = CUFE_INPUT_NOTE.sub(r"\1 removed", xml)
     return DOCUMENT_ID.sub(fake_document_id, xml)
 
 
 def find_leaks(xml: str, personal: dict[str, str]) -> int:
-    """Count personal values still present in the output."""
-    pattern_for = {
-        value: rf"(?<!\d){re.escape(value)}(?!\d)" if value.isdigit() else re.escape(value)
-        for value in personal
-    }
-    return sum(1 for value, pattern in pattern_for.items() if re.search(pattern, xml))
+    """Count personal values still present in the output.
+
+    Stricter than the replacement: long numbers are searched anywhere, even glued to
+    other digits. A false alarm is better than a leak.
+    """
+
+    def pattern_for(value: str) -> str:
+        if value.isdigit() and len(value) < MIN_STRICT_NUMBER_LENGTH:
+            return rf"(?<!\d){re.escape(value)}(?!\d)"
+        return re.escape(value)
+
+    return sum(1 for value in personal if re.search(pattern_for(value), xml))
 
 
 def read_invoice_xml(zip_path: Path) -> str:
@@ -135,6 +163,9 @@ def main() -> int:
     personal: dict[str, str] = {}
     for xml in originals:
         personal.update(find_personal_values(xml))
+    extra = read_extra_values()
+    personal.update(extra)
+    print(f"{len(extra)} extra values read from {EXTRA_VALUES_FILE}")
 
     anonymized = [anonymize(xml, personal) for xml in originals]
     leaks = sum(find_leaks(xml, personal) for xml in anonymized)
