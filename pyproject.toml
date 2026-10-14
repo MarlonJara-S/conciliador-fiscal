@@ -30,6 +30,7 @@ addopts = "-ra"
 
 [dependency-groups]
 dev = [
+    "lxml-stubs>=0.5.1",
     "mypy>=2.4.0",
     "pip-audit>=2.10.1",
     "pre-commit>=4.7.0",
