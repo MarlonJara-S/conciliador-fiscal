@@ -119,6 +119,18 @@ def test_invalid_tax_subtotal_is_rejected(field: str, value: object) -> None:
         TaxSubtotal(**data)
 
 
+def test_fixed_per_unit_tax_without_rate_is_accepted() -> None:
+    # Some municipal taxes charge a fixed amount per unit instead of a percentage.
+    tax = TaxSubtotal(
+        tax_id="ZZ",
+        tax_name="Impuesto telefonia Fija Medellin",
+        taxable_amount=Decimal("1"),
+        tax_amount=Decimal("1600.00"),
+    )
+
+    assert tax.rate is None
+
+
 def test_negative_payable_amount_is_rejected() -> None:
     with pytest.raises(ValidationError):
         MonetaryTotals(
