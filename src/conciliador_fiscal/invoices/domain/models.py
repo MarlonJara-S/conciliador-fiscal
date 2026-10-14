@@ -53,8 +53,9 @@ class TaxSubtotal(DomainModel):
     tax_id: str = Field(min_length=1)  # DIAN tax code, e.g. "01" for IVA
     tax_name: str = Field(min_length=1)
     taxable_amount: Decimal = Field(ge=0)
-    rate: Decimal = Field(ge=0, le=MAX_TAX_RATE)  # percentage, e.g. 19.00
     tax_amount: Decimal = Field(ge=0)
+    # Percentage, e.g. 19.00. None for fixed per-unit taxes (e.g. municipal phone tax).
+    rate: Decimal | None = Field(default=None, ge=0, le=MAX_TAX_RATE)
 
 
 class MonetaryTotals(DomainModel):
